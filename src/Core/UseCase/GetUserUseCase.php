@@ -3,11 +3,11 @@
 namespace Core\UseCase;
 
 use Hexagonal\Core\Port\Input\RequestInterface;
-use Hexagonal\Core\Port\Repositories\UserRepositoryInterface;
+use Hexagonal\Infrastructure\Adapter\Repository\Doctrine\UserRepository;
 
 class GetUserUseCase implements UseCaseInterface
 {
-    public function __construct(UserRepositoryInterface $userRepository)
+    public function __construct(UserRepository $userRepository)
     {
         $this->userRepository = $userRepository;
     }
