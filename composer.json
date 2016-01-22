@@ -2,9 +2,9 @@
     "name": "alexlbr/hexagonal-symfony2-example",
     "license": "MIT",
     "type": "project",
-    "description": "Example of Hexagonal Architecture in Symfonye2",
+    "description": "Example of Hexagonal Architecture in Symfony2",
     "autoload": {
-        "psr-0": { "": "src/" }
+        "psr-0": { "Hexagonal\\": "src/" }
     },
     "require": {
         "php": ">=5.3.3",
@@ -17,7 +17,6 @@
         "symfony/monolog-bundle": "2.7.*",
         "sensio/distribution-bundle": "2.3.*",
         "sensio/framework-extra-bundle": "2.3.*",
-        "sensio/generator-bundle": "2.3.*",
         "friendsofsymfony/rest-bundle": "~1"
     },
     "require-dev": {

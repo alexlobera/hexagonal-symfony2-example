@@ -21,6 +21,8 @@ framework:
     session:         ~
     fragments:       ~
     http_method_override: true
+    serializer:
+        enabled: true
 
 
 # Doctrine Configuration
@@ -29,12 +31,12 @@ doctrine:
         default_connection: core
         connections:
             core:
-                driver:   %database_core_driver%
-                host:     %database_core_host%
-                port:     %database_core_port%
-                dbname:   %database_core_name%
-                user:     %database_core_user%
-                password: %database_core_password%
+                driver:   %database_driver%
+                host:     %database_host%
+                port:     %database_port%
+                dbname:   %database_name%
+                user:     %database_user%
+                password: %database_password%
                 charset:  UTF8
 
     orm:
