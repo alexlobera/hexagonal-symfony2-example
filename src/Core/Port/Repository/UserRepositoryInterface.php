@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexagonal\Core\Ports\Repositories;
+namespace Hexagonal\Core\Port\Repository;
 
 interface UserRepositoryInterface
 {

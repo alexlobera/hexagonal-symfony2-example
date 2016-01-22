@@ -2,8 +2,8 @@
 
 namespace Core\UseCase;
 
-use Core\Ports\Input\RequestInterface;
-use Core\Ports\Repository\UserRepositoryInterface;
+use Hexagonal\Core\Port\Input\RequestInterface;
+use Hexagonal\Core\Port\Repositories\UserRepositoryInterface;
 
 class GetUserUseCase implements UseCaseInterface
 {

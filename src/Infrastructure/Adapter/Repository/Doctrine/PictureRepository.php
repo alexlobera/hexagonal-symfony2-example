@@ -13,7 +13,7 @@ class PictureRepository implements PictureRepositoryInterface
         $this->repository = $repository;
     }
 
-    public function getUserById($id)
+    public function getPictureById($id)
     {
         return $this->repository->findOneById($id);
     }

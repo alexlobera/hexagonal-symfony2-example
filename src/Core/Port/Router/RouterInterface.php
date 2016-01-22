@@ -1,6 +1,6 @@
 <?php
 
-namespace Core\Ports\Router;
+namespace Hexagonal\Core\Port\Router;
 
 interface RouterInterface
 {

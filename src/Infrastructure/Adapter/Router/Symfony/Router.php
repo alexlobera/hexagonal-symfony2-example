@@ -1,8 +1,8 @@
 <?php
 
-namespace Hexagonal\Infrastructure\Adapters\Router\Symfony;
+namespace Hexagonal\Infrastructure\Adapter\Router\Symfony;
 
-use Hexagonal\Core\Ports\Router\RouterInterface;
+use Hexagonal\Core\Port\Router\RouterInterface;
 
 class Router implements RouterInterface
 {
