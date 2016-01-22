@@ -47,8 +47,9 @@ doctrine:
             mappings:
               Core:
                 type: xml
-                dir: %kernel.root_dir%/../src/Infastructure/Adapter/Repository/Doctrine/Mapping/Xml
+                dir: %kernel.root_dir%/../src/Infrastructure/Adapter/Repository/Doctrine/Mapping/Xml
                 prefix: Hexagonal\Core\Entity
+                is_bundle: false
 
 fos_rest:
     view:
