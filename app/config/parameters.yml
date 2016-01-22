@@ -1,0 +1,10 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: localhost
+    database_port: null
+    database_name: hexagonal
+    database_user: root
+    database_password: 123
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
