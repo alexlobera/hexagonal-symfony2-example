@@ -4,7 +4,7 @@
     "type": "project",
     "description": "Example of Hexagonal Architecture in Symfony2",
     "autoload": {
-        "psr-0": { "Hexagonal\\": "src/" }
+        "psr-4": { "Hexagonal\\": "src/" }
     },
     "require": {
         "php": ">=5.3.3",
