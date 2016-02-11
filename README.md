@@ -39,7 +39,7 @@ Usage
 
 The source code of the web is under (wherever you cloned the repo)/www and it's mapped to the Vagrant machine.
 
-Type in your web browswer http://10.37.4.58/
+Type in your web browser http://10.37.4.58/
 No route found for "GET /" (of course you have to implement it!)
 
 Edit the code under www in your host machine, save and check the browser again
