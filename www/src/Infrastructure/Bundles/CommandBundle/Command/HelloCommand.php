@@ -1,6 +1,6 @@
 <?php
 
-namespace Hexagonal\Infrastructure\CommandBundle\Command;
+namespace Hexagonal\Infrastructure\Bundles\CommandBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
