@@ -33,9 +33,9 @@ class HelloCommand extends ContainerAwareCommand
     {
         $name = $input->getArgument('name');
         if ($name) {
-            $text = 'Hello '.$name;
+            $text = 'Welcome to the Hexagonal Symfony2 workshop '.$name;
         } else {
-            $text = 'Hello';
+            $text = 'Welcome to the Hexagonal Symfony2 workshop';
         }
 
         if ($input->getOption('yell')) {
