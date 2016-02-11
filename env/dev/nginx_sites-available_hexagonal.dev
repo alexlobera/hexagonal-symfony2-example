@@ -1,0 +1,41 @@
+server {
+
+    listen 80;
+    server_name hexagonal.dev;
+    root /var/www/hexagonal.dev/web;
+  
+    # strip app.php/ prefix if it is present
+    rewrite ^/app\.php/?(.*)$ /$1 permanent;
+
+    # Handle static files, redirect to app.php if not found
+    location / {
+        try_files $uri /app_dev.php?$query_string;
+    }
+ 
+    location /images {
+        alias /var/www/hexagonal.dev/var/images;
+    }
+
+    # Pass the PHP scripts to FastCGI server
+    location ~ ^/(app|app_dev|config)\.php(/|$) {
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        include fastcgi_params;
+        fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param  HTTPS off;
+        fastcgi_buffers 16 16k; 
+        fastcgi_buffer_size 32k;
+    }
+    error_log /var/log/nginx/hexagonal_error.log;
+    access_log /var/log/nginx/hexagonal_access.log;
+}
+
+server {
+
+    listen 80;
+    server_name cdn1.hexagonal.dev;
+    root /var/www/hexagonal.dev/web;
+  
+    error_log /var/log/nginx/cdn1_hexagonal_error.log;
+    access_log /var/log/nginx/cdn1_hexagonal_access.log;
+}

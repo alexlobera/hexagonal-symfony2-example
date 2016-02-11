@@ -1,0 +1,1 @@
+{"nfs":{"/vagrant":{"nfs":true,"guestpath":"/vagrant","hostpath":"/Users/alexlobera/Projects/wemanity/workshops/php/Hexagonal","disabled":false,"type":"nfs","map_uid":501,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"2116880790"}}}
