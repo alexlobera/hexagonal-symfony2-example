@@ -3,8 +3,8 @@ parameters:
     database_driver: pdo_mysql
     database_host: localhost
     database_port: null
-    database_name: hexagonal
+    database_name: hexagonal_dev
     database_user: root
-    database_password: 123
+    database_password:
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt

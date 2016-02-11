@@ -6,11 +6,5 @@
     </id>
     <field name="email" type="string" column="email" length="255" nullable="false"/>
 
-    <one-to-many
-        field="pictures"
-        target-entity="Hexagonal\Core\Entity\Picture"
-        mapped-by="user">
-    </one-to-many>
-
   </entity>
 </doctrine-mapping>
