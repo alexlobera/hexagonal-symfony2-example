@@ -1,0 +1,7 @@
+services:
+
+    hexagonal.repository.doctrine.user:
+        class: Hexagonal\Infrastructure\Adapter\Repository\Doctrine\UserRepository
+        factory: [getRepository, doctrine.orm.entity_manager]
+        arguments:
+          - Hexagonal\Core\Entity\User
